@@ -7,7 +7,7 @@ package cour;
 
 /**
  *
- * @author sowmya
+ 
  */
 public class Main {
 
