@@ -264,4 +264,171 @@ cout<<"Sorry, there is not any employee with requested personal number. Do you w
          cout<<"\nFirst Name       Last Name       Personal ID         Salary per year (Euros)"; 
          cout<<"\n--------------   --------------  ------------       -------------------------"<<endl;
 
+for(int i=0; i<a; i++){
+        e[i].get_FieldName();
+        
+        cout<<"hahahahah="<<n<<endl;
+     
+        } 
+          }
+
+
+
+void ::Person::in_FirstName()
+{
+     cin>>FirstName ;
+}
+void::Person::in_FamilyName()
+{
+ cin>>LastName;
+}
+void::Person::in_Workinghour()
+{
+  cin>>WorkingHours;
+  Salary=WorkingHours*CostPerHour*52;
+}
+void::Person::in_Costperhour()
+{
+  cin>>CostPerHour;
+  Salary=WorkingHours*CostPerHour*52;
+}
+
+
+
+
+
+
+
+void HRM::ReportList() {
+     
+ char op;
+ bool doMore;
+ cout<<"\nPlease enter the related number of the field which you would like to sort the list based on it.\n(1. Family name, 2.Salary)?\n"<<endl;                       
+ //cin>>op;
+    while(!(cin>>op))  //Reciving vaiables from input : is it no/character ?
+      {
+                   cout << "Please  enter a number!  Try again: ";
+                   cin.clear ();   
+                  cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                           // whichever comes first.
+      }
+      
+
+         switch(op)
+         {
+           case '1':
+                    cout<<"\nSorting based on Family Name\n"<<endl;
+                    for(int i=0;i<=n;i++)
+                    {
+                     for(int j=i+1;j<=n-1;j++)      
+                     {  
+                        if(h[i]>h[i+1])
+                        {
+                           temp[i]=e[i];                       
+                           e[i]=e[j];
+                           e[j]=temp[i];
+                        }
+                     }
+                    }
+                    
+                    
+                   for(int i=0;i<n;i++)
+                   {
+                   e[i].get_FieldName();
+                   }
+                     cout<<"\nsorted\n";
+                   
+                    break;
+           case'2':
+                    cout<<"\nSorting based on Salary\n"<<endl;
+                    for(int h=0;h<n;h++)
+                    {
+                       for(int q=h+1;q<n;q++)    
+                       {     
+                    if(sal[h]>sal[h+1]);
+                     {
+                           temp[h]=e[h];                       
+                           e[h]=e[q];
+                           e[q]=temp[h];
+                        }
+                     }
+                    }
+                   for(int j=0;j<n;j++)
+                   {
+                   e[j].get_FieldName();
+                   }
+                    cout<<"\nsortedlist is printed above\n";
+                    
+                    break;        
+           }
+ }
+      
+      
+
+void HRM::SearchPerson(){
+     int c;
+     char redo1;
+     string familyname;
+     double min,max;
+      do{  
+      cout<<"Search is based on two different fields (1.family name, 2.Salary), please enter your choice?="<<endl;
+      //cin>>c;
+       while(!(cin>>c))  //Reciving vaiables from input : is it no/character ?
+      {
+                   cout << "Please  enter a number!  Try again: ";
+                   cin.clear ();   
+                  cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                           // whichever comes first.
+      }
+      
+      
+      if(c==2)
+      
+      {
+              cout<<"Please define your search range for salary of employees ."<<endl;
+              cout<<"What is minimum salary for search (S_min)?="<<endl;
+              //cin>>min;
+               while(!(cin>>min))  //Reciving vaiables from input : is it no/character ?
+      {
+                   cout << "Please  enter a number!  Try again: ";
+                   cin.clear ();   
+                  cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                           // whichever comes first.
+      }
+              cout<<"What is maximum salary for search (S_max)?="<<endl; 
+              //cin>>max;
+               while(!(cin>>max))  //Reciving vaiables from input : is it no/character ?
+      {
+                   cout << "Please  enter a number!  Try again: ";
+                   cin.clear ();   
+                  cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                           // whichever comes first.
+      }
+                    int a;
+                    a=n;
+         cout<<"\nThe employee with the following information has been added to the system:"<<endl;
+ cout<<"\nFirst Name       Last Name       Personal ID         Salary per year (Euros)"; 
+ cout<<"\n--------------   --------------  ------------       -------------------------"<<endl;
+              for(int i=0; i<n; i++) {
+            
+                
+                   if (z[i]>min && z[i]<max) {
+                               
+                                       cout<<"naaaaaaaaaaaam"<< n<<endl;   
+                                       e[i].gett_FieldName();             
+                                       cout<<"matching="<< z[i];           
+                                           }
+                                     } 
+       
+       
+             
+       }
+       
+       else if(c==1)
+      {
+                    cout<<"Please enter the family name of employee?"<<endl;
+                    cin>>familyname;
+                    cout<<"\nThe employee with the following information has been added to the system:"<<endl;
+                    cout<<"\nFirst Name       Last Name       Personal ID         Salary per year (Euros)"; 
+                    cout<<"\n--------------   --------------  ------------       -------------------------"<<endl;
 
