@@ -49,7 +49,7 @@ public ResponceForm(String s,String msg) {
            
 		 jLabel1.setText(msg);
            
-		 jButton2.setVisible(false);
+		 jButton2.setVisible(true);
        
 		 }
         
@@ -310,7 +310,7 @@ public ResponceForm(String s,String msg) {
                 }
                 );
 
-         frame.setVisible(true);
+         frame.setVisible(false);
          frame.setBounds(150,150,500,500);
 
     }catch (Exception ex) {
