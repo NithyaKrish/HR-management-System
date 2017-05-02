@@ -259,7 +259,7 @@ public class HR_home extends javax.swing.JFrame {
                 String app_id="";
                 String name="";
                 String dob="";
-                String gender="";
+               // String gender="";
                 String qualification="";
                 String experience="";
                 String contact="";
