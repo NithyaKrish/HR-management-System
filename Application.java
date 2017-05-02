@@ -143,7 +143,7 @@ public class Application extends javax.swing.JFrame {
 
         jLabel3.setText("Date Of Birth");
 
-        jLabel4.setText("Gender");
+    //    jLabel4.setText("Gender");
 
         jLabel5.setText("Qualification ");
 
