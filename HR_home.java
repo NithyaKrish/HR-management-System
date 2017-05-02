@@ -341,7 +341,7 @@ public class HR_home extends javax.swing.JFrame {
 
                 public void actionPerformed(ActionEvent event) {
                     try{
-                String sql = "Update applications set status = 'Selected' where app_id=?";
+                String sql = "Update applications set status = 'Rejected' where app_id=?";
                 PreparedStatement pt = conn.prepareStatement(sql);
                
                 pt.setString(1,id);
