@@ -431,4 +431,167 @@ void HRM::SearchPerson(){
                     cout<<"\nThe employee with the following information has been added to the system:"<<endl;
                     cout<<"\nFirst Name       Last Name       Personal ID         Salary per year (Euros)"; 
                     cout<<"\n--------------   --------------  ------------       -------------------------"<<endl;
+                    for(int i=0; i<n; i++) {
+           
+                
+       if (h[i]==familyname) {
+                              
+                    cout<<"naaaaaaaaaaaam"<< n<<endl;   
+                    e[i].gett_FieldName();             
+                    cout<<"matching="<< z[i];           
+                             }
+                                 }
+      }
+     
+      cout<<"\nDo you want to Search any other field (y/n)?\n"<<endl;
+               cin>>redo1;
+               }while(redo1=='y'||redo1=='Y');
+     
+     
+     }
+     
+
+void ::Person::LastNamesortList() {
+     int temp2;
+     char temp,temp1;
+                                }
+     
+void::Person ::set_Name(){    
+               cout<<"Do you really want to delete employee"<<FirstName<<"\t"<< LastName<< "(y/n)?:";   //PersonalID=y[i];
+                         }
+                              
+                              
+int k=0;      
+void::Person ::set_FieldName(){
+             PersonalID=x;
+             x++;
+             cout<<n;
+          cout<<"First Name=";
+         
+         while(!(cin>>FirstName))  //Reciving vaiables from input : is it no/character ?
+      {
+                   cout << "Please  enter a string!  Try again: ";
+                   cin.clear ();   
+                   cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                  // whichever comes first.
+      }
+                   cout<<"Last Name=";
+        
+         while(!(cin>>LastName))  //Reciving vaiables from input : is it no/character ?
+      {
+                   cout << "Please  enter a string!  Try again: ";
+                   cin.clear ();   
+                   cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                  // whichever comes first.
+      }
+         
+                   cout<<"How many hours a week is his/her work? =";
+           ;
+         while(!(cin>>WorkingHours))  //Reciving vaiables from input : is it no/character ?
+      {
+                  cout << "Please  enter a number!  Try again: ";
+                  cin.clear ();   
+                  cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                  // whichever comes first.
+      }
+                 cout<<"How much per hour is his/her salary? =";
+        
+        while(!(cin>>CostPerHour))  //Reciving vaiables from input : is it no/character ?
+      {
+                 cout << "Please  enter a number!  Try again: ";
+                 cin.clear ();   
+                 cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                  // whichever comes first.
+      }
+           
+ Salary=WorkingHours*CostPerHour*52;
+ z[i]= Salary;
+ sal[i]=Salary;
+ h[i]=LastName;
+ y[k]=PersonalID;
+
+k++;
+}
+
+void::Person ::get_FieldName(){              
+                cout<<FirstName<<"\t\t"<<LastName<<"\t\t\t"<<PersonalID<<"\t\t\t"<<Salary<<"\t"<<endl;
+                              }
+                
+                
+                
+void::Person ::gett_FieldName(){            
+                cout<<FirstName<<"\t\t"<<LastName<<"\t\t\t"<<PersonalID<<"\t\t\t"<<Salary<<"\t"<<endl;
+                               }
+
+
+
+int main()
+{
+//-------defining variables and initializing them-------------    
+
+
+    HRM info ;
+    
+   int c;
+    char operation,ch;
+//--------Printing my name on screen----------------    
+    cout<<        "Welcome to the  program 2.1 written by Your Name"<<endl;
+    cout<<"**************************************************************************"<<endl;
+    cout<<endl<<endl<<endl;
+   do
+ {
+                   
+    cout<<"Welcome to Human Resource Management (HRM) Software of Company XYZ.";
+    cout<<"To do specific task please choose one of the following commands."<<endl<<endl<<endl;
+    cout<<"    1. Add new employee"<<endl;
+    cout<<"    2. Delete employee information"<<endl;
+    cout<<"    3. Update employee information"<<endl;
+    cout<<"    4. Make reports based on specific field"<<endl;
+    cout<<"    5. Search employee"<<endl;
+    cout<<"    6. Quit"<<endl<<endl;
+    
+    
+       while(!(cin>>c))  //Reciving vaiables from input : is it no/character ?
+      {
+      cout << "Please  enter a number!  Try again: ";
+      cin.clear ();   
+      cin.ignore (1000, '\n');  // Skip to next newline or 1000 chars,
+                                  // whichever comes first.
+      }
+      switch(c)
+  {
+  case 1:
+                cout<<"\nEnter the information of the new employee"<<endl;
+    info.AddPerson(); 
+    break;
+  case 2: 
+               info.DeletePerson();
+               break;
+  case 3:
+              cout<<"\nEnter an item to deletion";    
+              info.UpdatePerson();
+              break;
+  case 4:
+                cout<<"\nEnter an element to search";
+    info.ReportList();
+    break;
+  case 5:
+             info.SearchPerson();
+            break;
+    default :
+             cout<<"\nInvalid option try again";
+        
+  }
+       cout<<"\ndo u want to continue";
+      cin>>ch;
+ }
+ while(ch=='y'||ch=='Y');
+   
+  
+    system("pause");
+    return 0;
+    }
+
+
+
 
